@@ -1,14 +1,16 @@
+
 const App = ({ notes }) => {
   return (
     <div>
       <h1>Notes</h1>
-      {/* double test 1 */}
+      {/* test1 */}
       <ul>
         {notes.map((note) => (
-          <li key={note.id}>{note.content}</li>
+          <Note key={note.id} note={note} />
         ))}
       </ul>
     </div>
   );
 };
+
 export default App;
